@@ -1,4 +1,4 @@
-# <div align = "center"> Predicting Residential Electricity Consumption Variability Using Temperature & Total Customers </div>
+# <div align = "center"> Predicting Residential Electricity Consumption Variability Using Temperature & Customer Data </div>
 This project aims to predict residential electricity consumption variability based on temperature changes and the total number of customers. Using data analysis and machine learning techniques, the model identifies patterns and key factors driving fluctuations in electricity usage, helping to optimize energy distribution and forecast future demands. The repository includes data preprocessing, exploratory analysis, model development, and performance evaluation.
 
 ```{r}
