@@ -300,8 +300,7 @@ ggplot(yearly_summary, aes(x=Year, y=AvgConsumption)) +
   labs(title="Average Yearly Electricity Consumption",
        x="Year", y="Average Consumption")
 ```
-![Uploading image.png…]()
-
+![image](https://github.com/user-attachments/assets/94c89029-f31c-4584-8226-11f8ca8b6bd2)
  
   - Disregarding the partial 2024 figures, the electricity consumption data reveals a relatively stable pattern across the remaining years, marked by two periods of decreased consumption (2010-2012, 2016-2017) and a subsequent surge in 2017-2018.
 
