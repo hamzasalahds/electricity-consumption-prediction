@@ -403,9 +403,7 @@ ggplot(trainData, aes(x = Temperature, y = Consumption)) +
 
 ```
 ![image](https://github.com/user-attachments/assets/d27dbdc4-751d-4fb2-aaa9-2d1d7b87d893)
-
 ![image](https://github.com/user-attachments/assets/49e758a6-a31c-4ed4-8fee-255b901a97ae)
-
 ![image](https://github.com/user-attachments/assets/0fbf086d-df87-44f3-ae06-33399288e80c)
 
  - The adjusted R-squared value is 0.675, indicating that approximately 67.5% of the variability in electricity Consumption is explained by the model.
