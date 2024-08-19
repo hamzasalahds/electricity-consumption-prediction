@@ -7,8 +7,7 @@ The goal is to develop a machine learning model that accurately predicts the var
 ## Research Questions
 #### Primary Question: 
 
-  - To what extent do temperature and customers predict variability 
-  in electricity consumption?
+  - To what extent do temperature and customers predict variability in electricity consumption?
 
 #### Secondary Questions:
   - Is there a linear relationship between temperature and electricity consumption?
@@ -63,9 +62,9 @@ I Will apply advanced techniques to achieve an understanding on the data if the 
 ## Questions for Future Steps
   - How to account for other factors?
 
-  - Can we develop a predictive model for future consumption?
+  - Can I develop a predictive model for future consumption?
 
-## What do you not know how to do right now that you need to learn to answer your research questions?
+## What do I not know how to do right now that I need to learn to answer my research questions?
   - To more fully answer my research questions, I need to expand my knowledge of advanced regression techniques beyond linear regression and basic generalized linear models (GLMs) and GAMs. Exploring a wider range of advanced regression models will allow for a more comprehensive analysis and potentially uncover deeper insights into the relationships within my data.
   
 ## How to import and clean my data
@@ -74,16 +73,16 @@ I Will apply advanced techniques to achieve an understanding on the data if the 
   3. fix column displaying date and convert it to date format
   4. check for null data, and remove them.
 
-## How do you plan to slice and dice the data?
+## How do I plan to slice and dice the data?
 
   - By Time Periods: Analyze by months, seasons, and years to observe trends and seasonal effects.
   - By Temperature Ranges: Group data into different temperature ranges to see how electricity consumption varies.
   
 ## What does the final data set look like?
 
-  - will use several methods in R to merge and bind columns from all data sets into one that will be used to for analysis, it will include columns such as electricity consumption, price per kWh and temperature.
+  - I will use several methods in R to merge and bind columns from all data sets into one that will be used to for analysis, it will include columns such as electricity consumption, price per kWh and temperature.
 
-## Do you plan on incorporating any machine learning techniques to answer your research questions? Explain.
+## Do I plan on incorporating any machine learning techniques to answer my research questions?l
 
   - I will perform regression analysis on data set and provide answers to my initial question, I will also sample some years and predict later years to check accuracy of model.
   
