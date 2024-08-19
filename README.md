@@ -173,16 +173,21 @@ df_combined <- df_combined[order(df_combined$Date,
 
 head(df_combined, 10)
 ```
+![image](https://github.com/user-attachments/assets/fdb3d02b-510e-42b1-9f35-68dd8cd301f2)
+
 ## Summary
 ```{r}
 summary(df_combined)
-
 ```
+![image](https://github.com/user-attachments/assets/d7869c0c-9ab1-4428-b9a9-3ad19ea1d3db)
+
 ## Checking for missing data
 ```{r}
 # Count NA values in the entire data frame
 sum(is.na(df_combined))
 ```
+![image](https://github.com/user-attachments/assets/0d5b2a43-77d0-4cd4-807c-532c357007bb)
+
 ```{r}
 library(ggplot2)
 # Scatter plot of electricity consumption vs temperature
@@ -190,16 +195,19 @@ ggplot(df_combined, aes(x=Temperature, y=Consumption)) +
   geom_point() +
   geom_smooth(method='lm', col='red') +
   labs(title="Electricity Consumption vs Temperature")
+![image](https://github.com/user-attachments/assets/b2a301b6-4da6-4f75-b4a5-a5cfbd0499c3)
 
 # Scatter plot of electricity consumption vs customer count
 ggplot(df_combined, aes(x=Customers, y=Consumption)) +
   geom_point() +
   geom_smooth(method='lm', col='blue') +
   labs(title="Electricity Consumption vs Customer Count")
+![image](https://github.com/user-attachments/assets/695c9098-d7d7-4457-a308-e41a8251f0a5)
 
 # Pair plot to see relationships among all variables
 pairs(df_combined)
 ```
+![image](https://github.com/user-attachments/assets/9f501262-d114-4452-98ff-83b2944b40bf)
   
   - It is apparent that there is lower electricity consumption when the temperature is between 50 and 70 degrees Fahrenheit.
   
@@ -212,7 +220,11 @@ df_cor
 
 df_cor_test <- cor.test(df_combined$Temperature, df_combined$Consumption)
 df_cor_test
-```   
+```
+![image](https://github.com/user-attachments/assets/3ea699c9-10b0-441b-ae63-e7ffc1c49d6e)
+![image](https://github.com/user-attachments/assets/9f302f6b-1055-4af4-b4fe-76259a01d372)
+![image](https://github.com/user-attachments/assets/c6ff8919-db29-4bda-9f36-d9c0f96dda0b)
+
  - The correlations between the variables are weak, indicating that changes in one variable are not strongly associated with changes in the other variables.
 
 ## Electricity Consumption my months
@@ -237,6 +249,7 @@ ggplot(monthly_summary, aes(x=Month, y=AvgConsumption)) +
   labs(title="Average Monthly Electricity Consumption",
        x="Month", y="Average Consumption")
 ```
+![image](https://github.com/user-attachments/assets/2fd5e763-3a7b-4a96-b5d8-3e98d26e48b6)
   
   - There is an apparent decline in electric consumption starting January and ending in june suggesting seasonality.
 
@@ -264,6 +277,7 @@ ggplot(seasonal_summary, aes(x=Season, y=AvgConsumption, fill = Season)) +
        x="Season", y="Average Consumption")
 
 ```
+![image](https://github.com/user-attachments/assets/96a713cc-df01-4b6e-8b9b-1f07ef4c7909)
   
   - It is clear that electric consumption increases in Summer and Winter.
   
@@ -285,11 +299,9 @@ ggplot(yearly_summary, aes(x=Year, y=AvgConsumption)) +
   geom_point(color="red") +
   labs(title="Average Yearly Electricity Consumption",
        x="Year", y="Average Consumption")
-
-
-
 ```
-  
+ ![image](https://github.com/user-attachments/assets/60f7e747-3b7b-40ad-9e3f-87ffc93d1dc5)
+ 
   - Disregarding the partial 2024 figures, the electricity consumption data reveals a relatively stable pattern across the remaining years, marked by two periods of decreased consumption (2010-2012, 2016-2017) and a subsequent surge in 2017-2018.
 
   
@@ -313,6 +325,7 @@ ggplot(temp_range_summary, aes(x=TempRange, y=AvgConsumption)) +
        x="Temperature Range", y="Average Consumption")
 
 ```
+![image](https://github.com/user-attachments/assets/9c18ae6b-0710-468f-8a7f-fd2e5e5858d1)
  
   - Summarizing electricity consumption by temperature range we can see a clear increase when the temperature is really cold and really hot.
   
@@ -334,6 +347,7 @@ testData <- df_combined[-trainIndex, ]
 model1 <- lm(Consumption ~ Customers + Temperature, data = trainData)
 summary(model1)
 ```
+![image](https://github.com/user-attachments/assets/71515b4a-f6cf-4e42-b537-010e51dd104f)
 
   - The R-squared values for both models are very close to zero. This indicates that the linear regression models do not explain much of the variation in consumption based on Temperature and total customers. In other words, there is not a strong linear relationship between average temperature and the variables in the dataset.
   
@@ -358,6 +372,11 @@ cat("R-squared:", R2, "\n")
 
 
 ```
+![image](https://github.com/user-attachments/assets/5aed9bb3-010a-43e8-bad5-b67ee0055c27)
+
+![image](https://github.com/user-attachments/assets/348fe72c-5be2-4fd0-b881-c128d0ab70ed)
+
+![image](https://github.com/user-attachments/assets/8a95e57b-71be-4ff3-8bce-17595e36c310)
 
   - The low R-squared value suggests that the linear model is not capturing much of the variability in electricity consumption.
    
@@ -384,6 +403,11 @@ ggplot(trainData, aes(x = Temperature, y = Consumption)) +
        y = "Consumption")
 
 ```
+![image](https://github.com/user-attachments/assets/d27dbdc4-751d-4fb2-aaa9-2d1d7b87d893)
+
+![image](https://github.com/user-attachments/assets/49e758a6-a31c-4ed4-8fee-255b901a97ae)
+
+![image](https://github.com/user-attachments/assets/0fbf086d-df87-44f3-ae06-33399288e80c)
 
  - The adjusted R-squared value is 0.675, indicating that approximately 67.5% of the variability in electricity Consumption is explained by the model.
  
@@ -408,6 +432,7 @@ ggplot(testData, aes(x = Consumption, y = Predicted_Consumption)) +
        y = "Predicted Consumption")
 ```
 
+![image](https://github.com/user-attachments/assets/95b7f48f-0081-4095-8a37-437700bf9686)
 
  - The scatter plot shows a positive correlation between observed and predicted consumption, indicating the model is generally accurate.
  
