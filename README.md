@@ -1,8 +1,21 @@
 # <div align = "center"> Predicting Residential Electricity Consumption Variability Using Temperature & Total Customers </div>
-This project aims to predict residential electricity consumption variability based on temperature changes and the total number of customers. Using data analysis and machine learning techniques, the model identifies patterns and key factors driving fluctuations in electricity usage, helping to optimize energy distribution and forecast future demands. The repository includes data preprocessing, exploratory analysis, model development, and performance evaluation.
 
-## Introduction
-The goal is to develop a machine learning model that accurately predicts the variability in residential electricity consumption based on temperature and total customers in the state of Tennessee. I'll utilize R's powerful statistical and data manipulation capabilities for this analysis.
+## Project Background
+Tennessee Energy Insights, founded as a data initiative in 2024, is a predictive analytics project focused on understanding residential energy consumption trends in Tennessee. The project aims to harness historical data on temperature, electricity pricing, and usage to uncover actionable insights that could inform energy policy, pricing strategies, and household energy efficiency initiatives.
+
+The project involves building a robust regression model to quantify the impact of environmental and economic factors—namely temperature and the cost per kilowatt-hour—on residential electricity consumption. Leveraging Python’s advanced data analytics ecosystem, including pandas and Scikit-learn, this model will provide statistical clarity on consumption variability and help predict future usage patterns.
+
+## Key Areas of Analysis
+Sales Trends and Energy Consumption: Evaluation of electricity usage patterns over time across different seasons and economic contexts.
+
+Predictive Modeling: Development of a multiple linear regression model to assess how temperature and electricity cost affect residential energy consumption.
+
+Economic Sensitivity Analysis: Investigation into how changes in kWh pricing influence consumption behavior.
+
+Climatic Impact Assessment: Exploration of the relationship between ambient temperature and electricity use, identifying potential thresholds of behavioral change.
+
+Interaction Effects: Analysis of whether combined effects of cost and temperature reveal deeper patterns in energy use.
+
 
 ## Research Questions
 #### Primary Question: 
