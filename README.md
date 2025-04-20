@@ -1,4 +1,5 @@
-# <div align = "center"> Predicting Residential Electricity Consumption Variability Using Temperature & Total Customers </div>
+## <div align = "center"> Tennessee Energy Insights: A Predictive Analytics Project for
+Forecasting Residential Energy Consumption </div>
 
 ## Project Background
 Tennessee Energy Insights, founded as a data initiative in 2024, is a predictive analytics project focused on understanding residential energy consumption trends in Tennessee. The project aims to harness historical data on temperature, electricity pricing, and usage to uncover actionable insights that could inform energy policy, pricing strategies, and household energy efficiency initiatives.
